@@ -31,6 +31,28 @@ All prompts in v1.0 share the same foundation:
 - **Collaborative execution** with explicit task tracking
 - **Scalability strategies** for handling large codebases
 
+## `chatmode-v2.0/`
+
+| File | Target Model |
+|------|--------------|
+| `aiconf-gpt-4.1.md` | OpenAI GPT-4.1 |
+| `aiconf-gpt-5-mini.md` | OpenAI GPT-5-Mini |
+| `aiconf-grok-code-fast.md` | Grok Code Fast |
+| `aiconf-sonnet.md` | Claude Sonnet |
+
+**Version 2.0** builds on v1.0 with significant improvements for autonomous, tool-enabled workflows in VS Code:
+
+### Key Improvements in v2.0:
+- **Full Tool Support:** Expanded tools list to include all VS Code capabilities (terminal selection, test files, search results, codebase navigation, etc.)
+- **Autonomous Execution:** Enhanced agent behavior to work continuously until problems are fully solved, only yielding when complete
+- **Internet Research:** Integrated web fetching and recursive link gathering for up-to-date documentation and dependency research
+- **Enhanced Verification:** Automatic lint checks, test execution, and error reporting after code changes
+- **Resume Capability:** Explicit support for "resume" or "continue" commands to pick up from the last incomplete todo item
+- **Tool-First Approach:** Stronger emphasis on using VS Code tools for all operations (editing, testing, debugging) rather than manual steps
+- **Iterative Problem-Solving:** Built-in workflow for testing edge cases, debugging root causes, and validating solutions rigorously
+
+**When to use v2.0:** If you need autonomous problem-solving with extensive research, rigorous testing, and minimal manual intervention, use v2.0. If you prefer more frequent check-ins and explicit approval at each step, stick with v1.0.
+
 
 
 # Why This Exists
@@ -63,24 +85,28 @@ If you're building chatmodes for professional or collaborative projects, underst
 
 # How to Use These Prompts
 
-1. **Choose the prompt file** that corresponds to your LLM model:
+1. **Choose the version** that matches your workflow:
+   - **v1.0** for collaborative, step-by-step approval at each task
+   - **v2.0** for autonomous, tool-enabled problem-solving with minimal intervention
+
+2. **Select the prompt file** that corresponds to your LLM model:
    - Using OpenAI GPT-4.1? → `aiconf-gpt-4.1.md`
    - Using OpenAI GPT-5-Mini? → `aiconf-gpt-5-mini.md`
    - Using Grok Code Fast? → `aiconf-grok-code-fast.md`
    - Using Claude Sonnet? → `aiconf-sonnet.md`
 
-2. **Load it as a system prompt** in your GitHub Copilot chatmode configuration
+3. **Load it as a system prompt** in your GitHub Copilot chatmode configuration
 
-3. **Start your session** by providing a `session_state` summary containing:
+4. **Start your session** by providing a `session_state` summary containing:
    - High-level goal
    - Approved specification
    - Implementation plan
    - Current progress
 
-4. **Follow the workflow** outlined in the prompt for consistent, spec-driven development
+5. **Follow the workflow** outlined in the prompt for consistent, spec-driven development
 
 > [!NOTE]
-> Version 1.0 represents the first iteration of these spec-driven prompts. Future versions (v2.0+) will include improvements and refinements based on real-world usage.
+> Version 2.0 is optimized for autonomous workflows and represents a significant evolution from v1.0. Future versions (v3.0+) will continue to refine and improve based on real-world usage.
 
 
 
