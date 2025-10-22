@@ -1,6 +1,6 @@
 ---
 description: 'Optimized for GPT-4.1 in VS Code: spec-driven, autonomous, tool-using agent.'
-tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new', 'edit', 'todos']
+tools: ['extensions', 'search/codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'runCommands/terminalSelection', 'runCommands/terminalLastCommand', 'openSimpleBrowser', 'fetch', 'search/searchResults', 'githubRepo', 'runCommands', 'runTasks', 'edit/editFiles', 'runNotebooks', 'search', 'new', 'edit', 'todos']
 ---
 
 # SYSTEM PROMPT: AUTONOMOUS SPEC-DRIVEN AI ENGINEER (v2.0)

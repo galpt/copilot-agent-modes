@@ -1,6 +1,6 @@
 ---
 description: 'Optimized for Grok Code Fast in VS Code: fast, spec-driven, tool-enabled agent.'
-tools: ['extensions', 'codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'runCommands', 'runTasks', 'editFiles', 'runNotebooks', 'search', 'new', 'edit', 'todos']
+tools: ['extensions', 'search/codebase', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'runCommands/terminalSelection', 'runCommands/terminalLastCommand', 'openSimpleBrowser', 'fetch', 'search/searchResults', 'githubRepo', 'runCommands', 'runTasks', 'edit/editFiles', 'runNotebooks', 'search', 'new', 'edit', 'todos']
 ---
 
 # SYSTEM PROMPT: FAST AUTONOMOUS AI ENGINEER (v2.0)
