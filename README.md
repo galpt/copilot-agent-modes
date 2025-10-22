@@ -1,20 +1,20 @@
 # Chatmode Fine-tuning: Spec-driven Copilot Modes
 
-> Pragmatic system prompts for AI agents that value clarity over hype
+*Pragmatic system prompts for AI agents that value clarity over hype*
 
----
 
-## Overview
+
+# Overview
 
 This repository contains a collection of **chatmode system prompts** designed to guide GitHub Copilot-style agents toward **spec-driven**, **stateful**, and **pragmatic** behavior when working on real software projects.
 
 These prompts intentionally avoid flashy buzzwords and emoji-heavy "vibe coding" instructions. Instead, they focus on established software engineering practices and reproducible workflows that work in professional team environments.
 
----
 
-## What's Inside
 
-### `chatmode-v1.0/`
+# What's Inside
+
+## `chatmode-v1.0/`
 
 | File | Target Model |
 |------|--------------|
@@ -31,9 +31,9 @@ All prompts in v1.0 share the same foundation:
 - **Collaborative execution** with explicit task tracking
 - **Scalability strategies** for handling large codebases
 
----
 
-## Why This Exists
+
+# Why This Exists
 
 Most publicly shared chatmodes lean into dramatic language, excessive emojis, and hyperbolic claims about "superhuman" or "quantum cognitive" workflows. From a developer's perspective — especially those who learned software engineering before the current AI agent craze — that approach can feel gimmicky and unhelpful.
 
@@ -45,7 +45,7 @@ Most publicly shared chatmodes lean into dramatic language, excessive emojis, an
 
 This repo brings AI agents back to fundamentals: **spec-driven development**, **stateful sessions**, and **practical collaboration**.
 
-### A Note on "Vibe Coding"
+## A Note on "Vibe Coding"
 
 I'm not against experimentation or casual coding. The problem emerges when people create chatmodes without understanding software engineering fundamentals, leading to:
 
@@ -56,11 +56,12 @@ I'm not against experimentation or casual coding. The problem emerges when peopl
 
 If you're building chatmodes for professional or collaborative projects, understanding **Software Development Life Cycle (SDLC)** is essential.
 
-**Recommended reading:** *Software Engineering: A Practitioner's Approach* by Roger S. Pressman
+> [!TIP]
+> **Recommended reading:** *Software Engineering: A Practitioner's Approach* by Roger S. Pressman
 
----
 
-## How to Use These Prompts
+
+# How to Use These Prompts
 
 1. **Choose the prompt file** that corresponds to your LLM model:
    - Using OpenAI GPT-4.1? → `aiconf-gpt-4.1.md`
@@ -78,21 +79,11 @@ If you're building chatmodes for professional or collaborative projects, underst
 
 4. **Follow the workflow** outlined in the prompt for consistent, spec-driven development
 
-> **Note:** Version 1.0 represents the first iteration of these spec-driven prompts. Future versions (v2.0+) will include improvements and refinements based on real-world usage.
+> [!NOTE]
+> Version 1.0 represents the first iteration of these spec-driven prompts. Future versions (v2.0+) will include improvements and refinements based on real-world usage.
 
----
 
-## Contributing
 
-Improvements are welcome. Please keep PRs focused on:
-- Clarity and practical utility
-- Software engineering best practices
-- Avoiding novelty language or hype
-
-The goal is pragmatic, spec-first prompts that help developers build better software.
-
----
-
-## License
+# License
 
 These files are provided as-is, with no warranty. Use them however you'd like, responsibly.
