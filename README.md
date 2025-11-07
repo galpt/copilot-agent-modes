@@ -139,7 +139,7 @@ If you're building chatmodes for professional or collaborative projects, underst
 2. **Select the prompt file** that corresponds to your AI model:
    - **v3.0 (recommended):**
      - Using OpenAI GPT-4.1 or GPT-5? → `chatmode-v3.0/gpt-finetuned.md`
-     - Using Anthropic Claude or Sonnet? → `chatmode-v3.0/sonnet-finetuned.md`
+     - Using Anthropic Claude Sonnet? → `chatmode-v3.0/sonnet-finetuned.md`
    - **v2.0:**
      - `chatmode-v2.0/aiconf-gpt-4.1.md`, `aiconf-gpt-5-mini.md`, `aiconf-grok-code-fast.md`, or `aiconf-sonnet.md`
    - **v1.0:**
