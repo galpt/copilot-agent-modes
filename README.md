@@ -79,6 +79,7 @@ Version 3.0 introduces model-specific optimizations:
 - **Context Gathering Optimization:** Parallel search strategies with early stop criteria to balance thoroughness and efficiency
 - **Tool Preambles:** Clear communication before, during, and after tool usage for better user experience
 - **Comprehensive Tool Support:** 40+ VS Code built-in tools including `#fetch`, `#githubRepo`, `#codebase`, `#problems`, and all editing/testing tools
+ - **Model compatibility:** `gpt-finetuned.md` has been tested with the `raptor-mini` model in GitHub Copilot and validated to work as expected; use `raptor-mini` for fast, efficient editing and tool-enabled workflows.
 
 #### For Anthropic Claude/Sonnet Models (`sonnet-finetuned.md`)
 - **XML-Structured Thinking:** Extensive use of XML tags (`<thinking>`, `<analysis>`, `<plan>`, `<answer>`) for structured reasoning

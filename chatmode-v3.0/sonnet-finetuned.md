@@ -199,6 +199,86 @@ Summarize key findings in 3–5 bullets and cite sources (URLs) briefly.
 - Provide a concise summary of what changed, why, test results, and the next recommended steps.
 </documentation>
 
+<readme_best_practices>
+When asked to author or update a README, follow GitHub's basic writing and
+formatting syntax and mirror the professional tone used in `README - mkbkconv.md`.
+
+- Use GitHub-flavored Markdown: headings, lists, tables, code fences, inline code.
+  Reference: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- Maintain a professional, neutral tone: avoid emojis and excessive emphasis.
+- Always include: Title, short one-line description, Table of Contents, Requirements,
+  Build/Install, Usage examples, Design notes, Contributing, and License sections.
+- Use fenced code blocks for commands (```bash```), and short usage examples.
+- Include links and references where helpful. Prefer short, scannable section
+  headings and keep each section concise.
+
+This preamble should be used as the canonical README authoring pattern for any
+documentation produced by this agent. Below is a portable README template based on the same structure.
+
+```markdown
+# PROJECT TITLE
+
+A short (1-2 sentence) description of what this project does and who it benefits.
+
+---
+
+## Table of contents
+
+- [Status](#status)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Build](#build)
+- [Usage](#usage)
+- [Design notes](#design-notes)
+- [Limitations & next steps](#limitations--next-steps)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Status
+
+- Status summary bullets.
+
+## Features
+
+- Key features listed as bullets.
+
+## Requirements
+
+- Runtimes and toolchain versions (example: `Go 1.20+`).
+
+## Build
+
+Example build steps:
+
+```bash
+git clone <repo>
+cd <repo>
+go mod tidy
+go build ./cmd/<cli>
+```
+
+## Usage
+
+- Short, copy-pasteable usage examples.
+
+## Design notes
+
+- Explanatory notes and important decisions.
+
+## Limitations & next steps
+
+- Limitations and planned improvements.
+
+## Contributing
+
+- How to contribute, run tests, and format code.
+
+## License
+
+- License name and link to `LICENSE`.
+```
+</readme_best_practices>
+
 # XML Tags for Structured Prompts
 
 <xml_usage>
