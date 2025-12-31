@@ -9,6 +9,7 @@ Pragmatic system prompts for AI agents that value clarity over hype.
   - [chatmode-v1.0](#chatmode-v10)
   - [chatmode-v2.0](#chatmode-v20)
   - [chatmode-v3.0](#chatmode-v30)
+  - [chatmode-v3.1](#chatmode-v31)
 - [Why This Exists](#why-this-exists)
 - [How to Use These Prompts](#how-to-use-these-prompts)
 - [Design Philosophy](#design-philosophy)
@@ -97,10 +98,29 @@ Version 3.0 introduces model-specific optimizations:
 - **No Session State Files:** Both models use conversation summaries instead of persistent `.session_state` files
 - **Tool-First Development:** Prefer VS Code tools over manual steps for all operations
 
-**When to use v3.0:** Use v3.0 when working with modern GPT or Claude models and you want cutting-edge, model-specific optimizations based on official vendor recommendations. v3.0 is recommended for all new projects.
+**When to use v3.1:** Use v3.1 when working with modern GPT or Claude models and you want cutting-edge, model-specific optimizations combined with stricter research and verification practices. v3.1 is recommended for all new projects.
 
 > [!NOTE]
 > v3.0 files are named differently (`gpt-finetuned.md` and `sonnet-finetuned.md`) to emphasize they are optimized for specific model families rather than individual model versions.
+> v3.1 continues this naming convention and includes refinements for stricter research and verification.
+
+
+### chatmode-v3.1
+
+**Version 3.1** is an incremental refinement of v3.0 with firmer Research-First requirements and higher-fidelity agent behavior for both GPT and Sonnet families.
+
+| File | Target Model Family |
+|------|---------------------|
+| `gpt-finetuned.md` | OpenAI GPT models (gpt-4.1, gpt-5, raptor-mini) |
+| `sonnet-finetuned.md` | Anthropic Claude/Sonnet models |
+
+Key improvements in v3.1:
+- **Stricter Research-First Protocol:** Explicit enforcement of web-based verification before making changes that touch external libraries or APIs
+- **High-Fidelity Agent Behavior:** Stronger persistence and verification steps (iterative testing, checklist enforcement, and clearer tool preambles)
+- **Sonnet-specific XML Discipline:** Reinforced XML-structured reasoning and prefilling guidance for Sonnet prompts
+- **Compatibility:** `gpt-finetuned.md` continues to be validated with `raptor-mini` for efficient, tool-enabled workflows.
+
+**When to use v3.1:** Use v3.1 when you want the same model-specific optimizations as v3.0 plus stricter research and verification steps (recommended for most new projects).
 
 ## Why This Exists
 
@@ -135,12 +155,12 @@ If you're building chatmodes for professional or collaborative projects, underst
 1. **Choose the version** that matches your workflow:
    - **v1.0** for collaborative, step-by-step approval at each task
    - **v2.0** for autonomous, tool-enabled problem-solving with minimal intervention
-   - **v3.0** for model-specific optimizations with official vendor best practices (recommended)
+   - **v3.1** for model-specific optimizations with official vendor best practices (recommended)
 
 2. **Select the prompt file** that corresponds to your AI model:
-   - **v3.0 (recommended):**
-     - Using OpenAI GPT-4.1 or GPT-5? → `chatmode-v3.0/gpt-finetuned.md`
-     - Using Anthropic Claude Sonnet? → `chatmode-v3.0/sonnet-finetuned.md`
+   - **v3.1 (recommended):**
+     - Using OpenAI GPT-4.1 or GPT-5? → `chatmode-v3.1/gpt-finetuned.md`
+     - Using Anthropic Claude Sonnet? → `chatmode-v3.1/sonnet-finetuned.md`
    - **v2.0:**
      - `chatmode-v2.0/aiconf-gpt-4.1.md`, `aiconf-gpt-5-mini.md`, `aiconf-grok-code-fast.md`, or `aiconf-sonnet.md`
    - **v1.0:**
@@ -149,7 +169,7 @@ If you're building chatmodes for professional or collaborative projects, underst
 3. **Load it as a custom instruction or system prompt** in your GitHub Copilot chatmode configuration or custom chat mode settings
 
 4. **Start your session:**
-   - **v3.0:** Simply start working—the model will synthesize conversation summaries automatically
+   - **v3.1:** Simply start working—the model will synthesize conversation summaries automatically
    - **v1.0/v2.0:** Provide a `session_state` summary containing high-level goal, approved specification, implementation plan, and current progress
 
 5. **Follow the workflow** outlined in the prompt for consistent, spec-driven development
@@ -162,7 +182,7 @@ This project follows these core principles:
 2. **Spec-driven development** — Always plan before implementing
 3. **Tool-first approach** — Leverage VS Code tools for all operations
 4. **Research-enabled** — Use web research to stay current with dependencies and best practices
-5. **Model-specific optimization** — v3.0 tailors prompts to each AI vendor's recommended patterns
+5. **Model-specific optimization** — v3.1 tailors prompts to each AI vendor's recommended patterns
 6. **Reproducible workflows** — Processes that work in team environments
 7. **Rigorous verification** — Test thoroughly before considering work complete
 
