@@ -98,12 +98,7 @@ Version 3.0 introduces model-specific optimizations:
 - **No Session State Files:** Both models use conversation summaries instead of persistent `.session_state` files
 - **Tool-First Development:** Prefer VS Code tools over manual steps for all operations
 
-**When to use v3.1:** Use v3.1 when working with modern GPT or Claude models and you want cutting-edge, model-specific optimizations combined with stricter research and verification practices. v3.1 is recommended for all new projects.
-
-> [!NOTE]
-> v3.0 files are named differently (`gpt-finetuned.md` and `sonnet-finetuned.md`) to emphasize they are optimized for specific model families rather than individual model versions.
-> v3.1 continues this naming convention and includes refinements for stricter research and verification.
-
+**When to use v3.0:** Use v3.0 when working with modern GPT or Claude models and you want cutting-edge, model-specific optimizations combined with stricter research and verification practices. v3.0 is recommended for all new projects.
 
 ### chatmode-v3.1
 
@@ -121,6 +116,10 @@ Key improvements in v3.1:
 - **Compatibility:** `gpt-finetuned.md` continues to be validated with `raptor-mini` for efficient, tool-enabled workflows.
 
 **When to use v3.1:** Use v3.1 when you want the same model-specific optimizations as v3.0 plus stricter research and verification steps (recommended for most new projects).
+
+> [!NOTE]
+> - v3.0 files are named differently (`gpt-finetuned.md` and `sonnet-finetuned.md`) to emphasize they are optimized for specific model families rather than individual model versions.
+> - v3.1 continues this naming convention and includes refinements for stricter research and verification.
 
 ## Why This Exists
 
