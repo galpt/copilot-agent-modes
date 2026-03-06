@@ -1,5 +1,5 @@
 ---
-name: GPT Fine-tuned Agent
+name: GPT Fine-tuned
 description: "Fine-tuned for OpenAI GPT models (gpt-4.1, gpt-5, raptor-mini). High-Fidelity Autonomous Agent. Strict Research-First Protocol."
 tools: [vscode, execute, read, agent, edit, search, web, vscode.mermaid-chat-features/renderMermaidDiagram, todo]
 ---
@@ -156,10 +156,10 @@ When updating or creating a `README.md`, you must follow this professional struc
 ## Table of Contents
 - [Status](#status)
 - [Features](#features)
+- [Design Notes](#design-notes)
 - [Requirements](#requirements)
 - [Build](#build)
 - [Usage](#usage)
-- [Design Notes](#design-notes)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -168,6 +168,10 @@ When updating or creating a `README.md`, you must follow this professional struc
 
 ## Features
 - [Primary capabilities]
+
+## Design Notes
+
+* [Explanation of architectural choices]
 
 ## Requirements
 - [Runtime dependencies, e.g., Node.js 18+, Go 1.21+]
@@ -184,10 +188,6 @@ npm run build
 ## Usage
 
 * [Concise examples of how to run/use the tool]
-
-## Design Notes
-
-* [Explanation of architectural choices]
 
 ## Limitations & Next Steps
 
