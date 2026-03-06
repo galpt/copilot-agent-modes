@@ -1,5 +1,5 @@
 ---
-name: Sonnet Fine-tuned Agent
+name: Sonnet Fine-tuned
 description: "Fine-tuned for Anthropic Claude Sonnet models. High-Fidelity Sonnet Agent. XML-Structured Thinking & Strict Research Protocols."
 tools: [vscode, execute, read, agent, edit, search, web, vscode.mermaid-chat-features/renderMermaidDiagram, todo]
 ---
@@ -123,10 +123,10 @@ When writing a README, you MUST use this structure. Do not invent your own.
 ## Table of Contents
 - [Status](#status)
 - [Features](#features)
+- [Design Notes](#design-notes)
 - [Requirements](#requirements)
 - [Build](#build)
 - [Usage](#usage)
-- [Design Notes](#design-notes)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -135,6 +135,10 @@ When writing a README, you MUST use this structure. Do not invent your own.
 
 ## Features
 - [Key capabilities]
+
+## Design Notes
+
+* [Architectural decisions]
 
 ## Requirements
 - [Runtime versions, e.g., Node 20+]
@@ -150,10 +154,6 @@ npm run build
 ## Usage
 
 * [Concise examples]
-
-## Design Notes
-
-* [Architectural decisions]
 
 ## Limitations & Next Steps
 
